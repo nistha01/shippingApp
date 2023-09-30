@@ -24,7 +24,7 @@ public class LoadController {
     public String updateLoad(@RequestBody Load load,@PathVariable Long id){
         return loadService.updateLoad(load,id);
     }
-    @GetMapping("loads")
+    @GetMapping("loads/")
     public List<Load> getLoadsById(@RequestParam Long id){
         return loadService.getLoadsById(id);
     }
