@@ -34,6 +34,8 @@ public class LoadService {
             curLoad.setNumberOfTruck(load.getNumberOfTruck());
             curLoad.setUnloadingPoint(load.getUnloadingPoint());
             curLoad.setTruckType(load.getTruckType());
+            curLoad.setUuid(load.getUuid());
+            iLoadRepo.save(curLoad);
             return "Load updated";
         }
         return "invalid Id";
